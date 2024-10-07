@@ -1698,12 +1698,19 @@
         border: 1px solid #241d4c !important;
         border-radius: 0.5rem !important;
         text-indent: 20px !important;
+        line-height: inherit !important;
+        height: 50px !important;
       }
 
       .buttons .outlined {
         background-color: transparent;
         border: 2px solid #241d4c;
         color: #241d4c !important;
+        text-decoration: none;
+
+        font-weight: 600 !important;
+        padding: 12px 24px !important;
+        border-radius: 0.25rem !important;
       }
 
       .buttons .outlined :hover {
@@ -1726,7 +1733,11 @@
       }
 
       p.switch {
-        margin-bottom: 8px;
+        margin-bottom: 24px;
+      }
+
+      #api .heading h1 {
+        display: none;
       }
 
       #forgotPassword {
@@ -1762,8 +1773,9 @@
                 src="https://bohandwerkerat.b2clogin.com/static/tenant/templates/images/logo.svg"
                 alt="Company Logo"
               />
-              <div class="heading"></div>
-              <h1 role="heading">Registrierung fortsetzen</h1>
+              <div class="heading">
+                <h1 role="heading">Registrierung fortsetzen</h1>
+              </div>
             </div>
             <div id="api" role="main"></div>
             <hr />
@@ -1772,13 +1784,13 @@
                 Sie haben noch keinen Zugang zur Registrierung?
               </p>
               <div class="buttons">
-                <button
+                <a
                   class="outlined"
                   type="button"
-                  onclick="location.href='http://www.google.com'"
+                  href="https://dev.bohandwerker.at/signUp"
                 >
                   Neue Registrierung starten
-                </button>
+                </a>
               </div>
             </div>
           </div>
