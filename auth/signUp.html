@@ -1433,14 +1433,29 @@
       }
 
       .buttons button {
-        font-weight: 600;
+        font-weight: 600 !important;
         width: auto !important;
+        height: auto !important;
         min-height: auto !important;
-        padding: 12px 24px;
+        padding: 12px 24px !important;
+        border-radius: 0.25rem !important;
       }
 
       #attributeList ul li input {
         color: #241d4c !important;
+      }
+
+      .panel-default {
+        border-radius: 2rem !important;
+      }
+
+      #api .heading h1 {
+        display: none;
+      }
+
+      -buttons .outlined {
+        background-color: transparent;
+        border: 2px solid #241d4c;
       }
     </style>
   </head>
@@ -1466,13 +1481,18 @@
                 src="https://bohandwerkerat.b2clogin.com/static/tenant/templates/images/logo.svg"
                 alt="Company Logo"
               />
+              <div class="heading">
+                <h1 role="heading">Registrierung starten</h1>
+              </div>
               <div id="api" role="main"></div>
               <div class="custom">
                 <p class="custom">
                   Sie haben bereits einen Zugang zur Registrierung?
                 </p>
                 <div class="buttons">
-                  <button>Laufende Registrierung fortsetzen</button>
+                  <button class="outlined">
+                    Laufende Registrierung fortsetzen
+                  </button>
                 </div>
               </div>
             </div>
