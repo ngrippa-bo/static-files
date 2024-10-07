@@ -1415,22 +1415,6 @@
 
       /* endinject */
 
-      button.custom {
-        padding: 8px 16px;
-        background-color: #241d4c;
-        color: #fff;
-        border-radius: 0.5rem;
-        font-weight: 600;
-      }
-
-      div.custom {
-        padding-top: 8px;
-      }
-
-      p.custom {
-        margin-bottom: 8px;
-      }
-
       .buttons button {
         font-weight: 600 !important;
         width: auto !important;
@@ -1440,16 +1424,14 @@
         border-radius: 0.25rem !important;
       }
 
-      #attributeList ul li input {
-        color: #241d4c !important;
-      }
-
       .panel-default {
         border-radius: 2rem !important;
       }
 
-      #api .heading h1 {
-        display: none;
+      input {
+        border: 1px solid #241d4c !important;
+        border-radius: 0.5rem !important;
+        text-indent: 20px !important;
       }
 
       .buttons .outlined {
@@ -1463,18 +1445,30 @@
         color: white !important;
       }
 
+      #cancel {
+        display: none;
+      }
+
       h1 {
         font-size: 30px !important;
         font-weight: 600 !important;
         color: #241d4c !important;
       }
 
-      #cancel {
-        display: none;
+      div.switch {
+        padding-top: 8px;
       }
 
-      input {
-        border-color: #241d4c !important;
+      p.switch {
+        margin-bottom: 8px;
+      }
+
+      #attributeList ul li input {
+        color: #241d4c !important;
+      }
+
+      #api .heading h1 {
+        display: none;
       }
     </style>
   </head>
@@ -1505,8 +1499,8 @@
               </div>
               <div id="api" role="main"></div>
               <hr />
-              <div class="custom">
-                <p class="custom">
+              <div class="switch">
+                <p class="switch">
                   Sie haben bereits einen Zugang zur Registrierung?
                 </p>
                 <div class="buttons">

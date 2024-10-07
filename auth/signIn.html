@@ -1681,15 +1681,62 @@
 
       /* endinject */
 
-      button.custom {
-        padding: 8px 16px;
-        background-color: #241d4c;
-        color: #fff;
+      .buttons button {
+        font-weight: 600 !important;
+        width: auto !important;
+        height: auto !important;
+        min-height: auto !important;
+        padding: 12px 24px !important;
+        border-radius: 0.25rem !important;
       }
 
-      div.custom {
-        text-align: left;
-        padding-top: 32px;
+      .panel-default {
+        border-radius: 2rem !important;
+      }
+
+      input {
+        border: 1px solid #241d4c !important;
+        border-radius: 0.5rem !important;
+        text-indent: 20px !important;
+      }
+
+      .buttons .outlined {
+        background-color: transparent;
+        border: 2px solid #241d4c;
+        color: #241d4c !important;
+      }
+
+      .buttons .outlined :hover {
+        background-color: #241d4c !important;
+        color: white !important;
+      }
+
+      #cancel {
+        display: none;
+      }
+
+      h1 {
+        font-size: 30px !important;
+        font-weight: 600 !important;
+        color: #241d4c !important;
+      }
+
+      div.switch {
+        padding-top: 8px;
+      }
+
+      p.switch {
+        margin-bottom: 8px;
+      }
+
+      #forgotPassword {
+        bottom: -100px;
+        right: auto;
+        left: 0;
+      }
+
+      .buttons button {
+        float: left !important;
       }
     </style>
   </head>
@@ -1715,13 +1762,23 @@
                 src="https://bohandwerkerat.b2clogin.com/static/tenant/templates/images/logo.svg"
                 alt="Company Logo"
               />
-              <div id="api" role="main"></div>
-              <div class="custom">
-                <p>
-                  Sie haben noch kein Konto? Starten Sie jetzt Ihre
-                  Registrierung.
-                </p>
-                <button class="custom">Registrierung starten</button>
+              <div class="heading"></div>
+              <h1 role="heading">Registrierung fortsetzen</h1>
+            </div>
+            <div id="api" role="main"></div>
+            <hr />
+            <div class="switch">
+              <p class="switch">
+                Sie haben noch keinen Zugang zur Registrierung?
+              </p>
+              <div class="buttons">
+                <button
+                  class="outlined"
+                  type="button"
+                  onclick="location.href='http://www.google.com'"
+                >
+                  Neue Registrierung starten
+                </button>
               </div>
             </div>
           </div>
